@@ -1,0 +1,16 @@
+server:
+  port: 9050
+  servlet:
+    context-path: /taller1-poli
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc://postgresql://ec2-34-205-209-14.compute-1.amazonaws.com:5432/degkvpl169dk7l
+    username: oeycinvwiczxjh
+    password: 084d59f7eec5b07671fcf8070efc796d0155779035d2332574647b76e7a05e1d
+    platform: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+
