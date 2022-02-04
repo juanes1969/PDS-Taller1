@@ -34,7 +34,7 @@ public class Project {
     private Date endDate;
 
     @JsonManagedReference
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "project")
     @JoinColumn(name = "backlog_id")
     private Backlog backlog;
 

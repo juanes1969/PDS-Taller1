@@ -2,6 +2,7 @@ package co.com.poli.taller1.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -36,8 +37,10 @@ public class Task {
     @Column(name = "hours")
     private Double hours;
     @Column(name = "start_date")
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date startDate;
     @Column(name = "end_date")
+    @JsonFormat(pattern="dd-MM-yyyy")
     private Date endDate;
     @Column(name = "project_identifier", updatable = false)
     private String projectIdentifier;
