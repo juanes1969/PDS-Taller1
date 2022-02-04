@@ -1,14 +1,14 @@
 server:
   port: 5432
   servlet:
-    context-path: /taller/v1
+    context-path: /poli/v1
 
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc://postgresql://ec2-34-205-209-14.compute-1.amazonaws.com:5432/degkvpl169dk7l
-    username: oeycinvwiczxjh
-    password: 084d59f7eec5b07671fcf8070efc796d0155779035d2332574647b76e7a05e1d
+    url: jdbc://postgresql://ec2-3-208-157-78.compute-1.amazonaws.com:5432/df8qu95dceft3k
+    username: wkwwswevwzwztd
+    password: 6c8d74dc2017dad2f01a3d5ec4bda0f9d623221f5300bd766bcf4f451cfe4af6
     platform: postgres
 
   jpa:
